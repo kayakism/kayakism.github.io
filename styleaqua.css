@@ -1,0 +1,158 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://wallpapers.com/images/hd/underwater-background-oepaymjqd9zy7i7v.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.marqueetop {
+  font-family: 'Courier New', monospace;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hiding scrollbar for IE, Edge and Firefox */
+#content {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+.hide {
+  display: none;
+}
+
+.mleft a {
+  color: white;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 5px;
+  bottom: 0;
+}
+
+.yellowbox {
+  background-color: #fde2a7;
+  display: inline-block;
+  box-sizing: border-box;
+  border-color: rgb(255, 237, 178);
+  border-style: outset;
+  padding-right: 11px;
+  padding-left: 11px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.musichovertext:hover+.hide {
+  display: block;
+  color: #b61010;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.mleft,
+.mright {
+  position: sticky;
+  top: 0;
+  height: 504px;
+  width: 120px;
+  text-align: center;
+  border: none;
+}
+
+.mleft {
+  float: left;
+}
+
+.mleft img {
+  max-width: 70px;
+}
+
+.container a:hover {
+  color: #e94545;
+}
+
+.mright {
+  float: right;
+}
+
+.navpanel {
+  font-size: 12px;
+  padding: 0;
+  text-align: center;
+}
+
+.mcenter {
+  flex: 1 0 0;
+  text-align: center;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.mcenter img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.postbox {
+  width: 18%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #fafefb;
+  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+  text-align: center;
+  display: flexbox;
+  margin: 0;
+  padding: 12px 8px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stickygif {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99999;
+  cursor: pointer;
+  transition: transform 2s;
+}
+
+.mcenter img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}

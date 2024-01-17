@@ -1,0 +1,87 @@
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      background-image: url("https://s13.gifyu.com/images/S0zdw.gif");
+      background-size: 180px;
+      font-family: monospace;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .example::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hiding scrollbar for IE, Edge and Firefox */
+    #content {
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* IE and Edge */
+    }
+
+    .stickygif {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      z-index: 99999;
+      cursor: pointer;
+      transition: transform 2s;
+    }
+
+    .homenav {
+      padding-left: 8px;
+      padding-top: 8px;
+      position: -webkit-sticky;
+      /* Safari */
+      position: sticky;
+      top: 0;
+      left: 0;
+    }
+
+    .yellowbox {
+      background-color: #fde2a7;
+      display: inline-block;
+      box-sizing: border-box;
+      border-color: rgb(255, 237, 178);
+      border-style: outset;
+      padding-right: 11px;
+      padding-left: 11px;
+      box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery img:hover {
+      border: 3px solid #00ff00;
+    }
+
+    .gallery {
+      padding: 5px;
+      float: left;
+    }
+
+    .gallery img {
+      width: auto;
+      height: 150px;
+      border: 2px solid #d13680;
+      box-sizing: border-box;
+    }
+
+    .desc {
+      padding: 1px;
+      text-align: center;
+    }
+
+    .instruct {
+      text-align: center;
+    }
+
+    .mcenter {
+      width: 80%;
+      margin: 0px auto 0px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }

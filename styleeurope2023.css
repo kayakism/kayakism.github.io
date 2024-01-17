@@ -1,0 +1,155 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://s13.gifyu.com/images/S0zdw.gif");
+  background-size: 180px;
+  font-family: monospace;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+#content {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+.mleft,
+.mright {
+  position: sticky;
+  top: 0;
+  padding-top: 10px;
+  height: 504px;
+  width: 120px;
+  text-align: center;
+  border: none;
+}
+
+.yellowbox {
+  background-color: #fde2a7;
+  display: inline-block;
+  box-sizing: border-box;
+  border-color: rgb(255, 237, 178);
+  border-style: outset;
+  padding-right: 11px;
+  padding-left: 11px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navpanel {
+  font-size: 12px;
+  padding: 0;
+  text-align: center;
+}
+
+.mleft img {
+  max-width: 70px;
+}
+
+.mleft {
+  float: left;
+}
+
+.hide {
+  display: none;
+}
+
+.musichovertext:hover+.hide {
+  display: block;
+  color: #b61010;
+}
+
+/* PAGE-SPECIFIC CODE */
+.marqueetop {
+  font-family: 'Courier New', monospace;
+  position: sticky;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.stickygif {
+  position: absolute;
+  padding-right: 10px;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: transform 2s;
+}
+
+.navpanel {
+  background-color: lightgrey;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 0.9em;
+  border-color: #cacaca;
+  border-style: outset;
+  margin: auto;
+  padding: 0.9em;
+}
+
+.titleascii {
+  font-size: max(0.1rem, 0.8vmin);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.europefeed {
+  text-align: center;
+}
+
+.mright {
+  float: right;
+}
+
+.mcenter {
+  flex: 1 0 0;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  justify-content: center;
+}
+
+.footer {
+  text-align: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 5px;
+  bottom: 0;
+}
+
+.yellowbox {
+  background-color: #fde2a7;
+  display: inline-block;
+  box-sizing: border-box;
+  border-color: rgb(255, 237, 178);
+  border-style: outset;
+  padding-right: 11px;
+  padding-left: 11px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
